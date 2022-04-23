@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="/style">
+<head>
+    <%- include('partials/header') %>
+    <title>Home page</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: rgb(144, 240, 245) ;
+        }
+
+    </style>
+</br>
+<center>
+<table>
+
+    <center>  <% let i = 0 %> </center> 
+        <center> <% data.forEach (data => {%> </center>
+            <center>   <% i++ %> </center>
+        <tr>
+            <center>    <td><a href="<%=`/book/${data._id}` %>"> <center>  <%= data.name%></a></td> </center>
+        </tr>
+    <% }); %>
+
+</table>
+</center>
+</br>
+<center> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <br>
+    <br><br><br>
+    <br><br>
+ 
+    <div class="Pane" >
+        
+ 
+        <p style=" position: absolute; bottom: 0; left: 0; width: 100%; text-align: center;"> <a href="/home"> List of Books </a>
+
+            &nbsp;|
+        <a href="/addnewbook"> Add A Book </a>
+        &nbsp;|
+        <a href="/deleteabook"> Delete A Book </a>
+       <br /><br />
+
+    </p>
+    
+    </div>
+    </center>
+</div>
+</body>
+</html>
