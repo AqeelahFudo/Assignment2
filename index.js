@@ -26,7 +26,7 @@ app.use("/", router);
 router.get("/home", bookController.index);
 router.get("/book/:id", bookController.Requestbook);
 router.get("/DeleteABook", bookController.load_page);
-router.get("/addNewBook", bookController.add);
+router.get("/AddNewBook", bookController.add);
 
 router.post("/booksnew/create", bookController.create, bookController.redirectView);
 router.delete("/booksnew/:bookId/delete", bookController.delete, bookController.redirectView);
