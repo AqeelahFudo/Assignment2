@@ -26,7 +26,7 @@ module.exports = {
         });
     },
     add: (req, res) => {
-        res.render("addNewBook");
+        res.render("AddNewBook");
     },
 
 // exports.bookCreate = (req, res) => {
